@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be09e9a22eec4d4aa1b735607c1881c, type: 3}
+  m_Name: RenamonSkin
+  m_EditorClassIdentifier: 
+  modDependency:
+    value: 
+    type: 0
+  bodyName: MageBody
+  nameTokenLocalizations:
+  - language: EN
+    value: Renamon
+  icon:
+    createFromColors: 1
+    sprite: {fileID: 0}
+    colors:
+      left:
+        serializedVersion: 2
+        rgba: 10318202
+      top:
+        serializedVersion: 2
+        rgba: 6338760
+      right:
+        serializedVersion: 2
+        rgba: 10318202
+      bottom:
+        serializedVersion: 2
+        rgba: 16774111
+    isExpanded: 1
+  unlockableName: 
+  baseSkins: []
+  meshReplacements:
+  - mesh: {fileID: 4300000, guid: 6a4fbe5c32111f741bf04aeea806afbe, type: 3}
+    rendererReference:
+      accessType: 1
+      name: MageMesh
+      index: 7
+      isExpanded: 1
+  gameObjectActivations:
+  - rendererIndex: 6
+    shouldActivate: 0
+  - rendererIndex: 0
+    shouldActivate: 0
+  - rendererIndex: 1
+    shouldActivate: 0
+  rendererInfos:
+  - defaultMaterial: {fileID: 2100000, guid: ada6f8e72eaa5cd4c9881d30aef6397a, type: 2}
+    defaultShadowCastingMode: 1
+    ignoreOverlays: 0
+    rendererReference:
+      accessType: 1
+      name: MageMesh
+      index: 7
+      isExpanded: 1
+  - defaultMaterial: {fileID: 2100000, guid: 1305c2cce7f1abb4e85295e98882eff6, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 1
+    rendererReference:
+      accessType: 0
+      name: MageMesh
+      index: 3
+      isExpanded: 1
+  - defaultMaterial: {fileID: 2100000, guid: 1305c2cce7f1abb4e85295e98882eff6, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 1
+    rendererReference:
+      accessType: 0
+      name: MageMesh
+      index: 4
+      isExpanded: 1
+  - defaultMaterial: {fileID: 2100000, guid: 1305c2cce7f1abb4e85295e98882eff6, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 1
+    rendererReference:
+      accessType: 0
+      name: MageMesh
+      index: 5
+      isExpanded: 1
+  - defaultMaterial: {fileID: 2100000, guid: 1305c2cce7f1abb4e85295e98882eff6, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 1
+    rendererReference:
+      accessType: 0
+      name: MageMesh
+      index: 2
+      isExpanded: 1
+  minionSkinReplacements: []
+  projectileGhostReplacements: []

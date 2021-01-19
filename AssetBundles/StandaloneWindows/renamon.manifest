@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 3453567523
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ba9dc225b9beb005dc2d570c1232d052
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9efa0356622aeb9d0887ac5c257bdecc
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/RenamonMat.mat
+- Assets/Resources/TailBase.prefab
+- Assets/Resources/Renamon.blend
+- Assets/Resources/EarBase.prefab
+Dependencies: []

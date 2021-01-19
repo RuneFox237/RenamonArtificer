@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 1794452273
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ab7080fbcde09b98135642fc921055da
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55459db5949230b2fb0b383e557a4996
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/SkinMods/RenamonArtificer/Meshes/Renamon.mesh
+- Assets/Resources/RenamonMat.mat
+- Assets/Resources/TailBase.prefab
+- Assets/Resources/TestMat.mat
+- Assets/SkinMods/RenamonArtificer/Icons/RenamonSkinIcon.png
+- Assets/Resources/EarBase.prefab
+Dependencies: []

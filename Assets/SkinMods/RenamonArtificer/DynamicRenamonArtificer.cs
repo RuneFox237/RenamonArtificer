@@ -145,7 +145,9 @@ new List<DynamicBoneColliderData>() { }, new List<string>() { "EarBase" }, Dynam
       while (modifications.OtherModifications.Count != 0)
       {
         clearModification(modifications.OtherModifications[0], modelObject, modifications); //clearmodification calls remove on applied Mod.
-      }
+      } 
+	  //remove the object from modified once all mods are cleared
+      ModifiedObjects.Remove(modelObject);
 
     }
 

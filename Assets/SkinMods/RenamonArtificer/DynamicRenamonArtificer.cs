@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using RuneFoxMods;
+using MonoMod.RuntimeDetour;
 
 //NameSpace and SkinName are generated from SkinDef Generator
 namespace RenamonArtificer
@@ -29,17 +30,19 @@ namespace RenamonArtificer
     private static Dictionary<GameObject, AppliedModifications> ModifiedObjects = new Dictionary<GameObject, AppliedModifications>();
 
     //This uses Name of class 
-    private static RenamonArtificerPlugin Instance { get; set; }
-    private static ManualLogSource InstanceLogger => Instance?.Logger;
+    //private static RenamonArtificerPlugin Instance { get; set; }
+    //private static ManualLogSource InstanceLogger => Instance?.Logger;
     /// Local Declarations
     ///////////////////////////////////////////////////////////
 
 
     partial void BeforeAwake()
     {
-      Instance = this;
+      //Instance = this;
 
-      On.RoR2.SkinDef.Apply += SkinDefApply;
+      new Hook(typeof(SkinDef).GetMethod(nameof(SkinDef.Apply)), (Action<Action<SkinDef, GameObject>, SkinDef, GameObject>)SkinDefApply).Apply();
+
+      //On.RoR2.SkinDef.Apply += SkinDefApply;
     }
 
     partial void AfterAwake()
@@ -79,7 +82,7 @@ new List<DynamicBoneColliderData>() { }, new List<string>() { "EarBase" }, Dynam
     ////////////////////////////////////////////////////////////////////////////
     ////// Local Functions (these should not need to be changed when added to different skins)
 
-    private static void SkinDefApply(On.RoR2.SkinDef.orig_Apply orig, SkinDef self, GameObject modelObject)
+    private static void SkinDefApply(Action<SkinDef, GameObject> orig, SkinDef self, GameObject modelObject)
     {
       orig(self, modelObject);
 
